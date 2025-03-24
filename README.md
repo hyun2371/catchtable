@@ -13,7 +13,7 @@
   | 기능       | 구현 방식                                                         |
   |------------|--------------------------------------------------------------|
   | 대기 생성  | 비관적 락을 사용해 대기 생성 시 동시성 이슈 처리               |
-  | 대기 취소  | 매일 자정 스케줄러를 돌려 Redis 데이터를 비우고, [bulk update 호출해 대기 상태 변경](https://hyun-deving.tistory.com/30) |
+  | 대기 취소  | 매일 자정 스케줄러를 돌려 Redis를 비우고, [bulk update 호출해 대기 상태 변경](https://hyun-deving.tistory.com/30) |
   | 대기 조회  | fetch join을 활용해 DB 접근 최소화                            |
 - [RestDocs를 활용한 API 명세](https://hyun-deving.tistory.com/25)
 
